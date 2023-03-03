@@ -1,7 +1,7 @@
 var weather =[];
 async function getWeather(keyword){
 
-  var res = await fetch( `https://api.weatherapi.com/v1/forecast.json?key=b1be7f29156b4e2da77143600232402&q=${keyword}&days=3&aqi=no&alerts=no`)
+  var res = await fetch( `http://api.weatherapi.com/v1/forecast.json?key=b1be7f29156b4e2da77143600232402&q=${keyword}&days=3&aqi=no&alerts=no`)
   weather = await res.json();
   displayWeather();
 }
